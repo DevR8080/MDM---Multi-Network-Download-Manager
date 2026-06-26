@@ -48,6 +48,22 @@ MDM creates multiple download sessions and intelligently assigns them to differe
 * Wi-Fi and mobile data available simultaneously
 * Internet permission
 
+## ❤️ Support the Project
+
+If you find this project useful, consider supporting its development. Your donations help improve the project, add new features, and maintain long-term development.
+
+### Cryptocurrency Donations
+
+**EVM Networks (Ethereum, BNB Smart Chain, Polygon, Arbitrum, Base, Optimism, Avalanche C-Chain, etc.)**
+
+USDT / USDC
+
+<img width="592" height="592" alt="qr-code" src="https://github.com/user-attachments/assets/f160a40f-8443-4973-8f7a-4c54abf09921" />
+
+`0x971bf6aba6cd0b745b005f2866d4a42cacad390c`
+
+> Thank you for supporting the project! ❤️
+
 ## Disclaimer
 
 The achievable speed increase depends on the server's support for parallel downloads, the quality of each network connection, and device capabilities. Some servers may limit concurrent connections or not support HTTP range requests.

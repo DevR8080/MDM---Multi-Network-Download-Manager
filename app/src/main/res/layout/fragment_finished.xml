@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="?android:actionBarSize"
+    tools:context=".fragments.FinishedFragment">
+
+    <ImageView
+        android:id="@+id/downloadic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/downloaded_icon"
+        android:src="@drawable/downloaded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/chipGroupActions"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        app:tint="@color/Completed" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/finishedRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadic"
+        app:singleLine="true"
+        app:singleSelection="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipClearKeep"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_finished"
+            app:chipBackgroundColor="@color/ItemBG"
+            app:chipStrokeColor="@color/gray"
+            android:textColor="@color/white"
+            app:chipIcon="@drawable/delete_all"
+            app:closeIconVisible="false"
+            app:iconPadding="0dp"
+            app:iconStartPadding="6dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipClearDelete"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_amp_delete_files"
+            app:chipBackgroundColor="@color/ItemBG"
+            app:chipStrokeColor="@color/gray"
+            android:textColor="@color/white"
+            app:chipIcon="@drawable/delete_files"
+            app:closeIconVisible="false"
+            app:iconPadding="0dp"
+            app:iconStartPadding="6dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/finishedRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chipGroupActions" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No finished downloads yet"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

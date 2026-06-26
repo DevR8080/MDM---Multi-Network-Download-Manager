@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/queueFragment">
+
+    <fragment
+        android:id="@id/queueFragment"
+        android:name="com.strategy.booster.fragments.QueueFragment"
+        android:label="fragment_queue"
+        tools:layout="@layout/fragment_queue" />
+    <fragment
+        android:id="@id/finishedFragment"
+        android:name="com.strategy.booster.fragments.FinishedFragment"
+        android:label="fragment_finished"
+        tools:layout="@layout/fragment_finished" />
+    <fragment
+        android:id="@id/statsFragment"
+        android:name="com.strategy.booster.fragments.StatsFragment"
+        android:label="StatsFragment" />
+    <fragment
+        android:id="@id/settingsFragment"
+        android:name="com.strategy.booster.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

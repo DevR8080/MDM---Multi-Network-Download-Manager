@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/queueFragment"
+        android:icon="@drawable/queue_page"
+        android:title="@string/queue"/>
+
+    <item
+        android:id="@+id/finishedFragment"
+        android:icon="@drawable/downloaded"
+        android:title="@string/finished"/>
+
+    <item
+        android:id="@+id/statsFragment"
+        android:icon="@drawable/stats"
+        android:title="@string/stats"/>
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"/>
+
+</menu>

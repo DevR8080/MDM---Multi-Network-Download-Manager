@@ -1,0 +1,100 @@
+<com.google.android.material.textfield.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+    android:id="@+id/urlInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_url"
+    app:boxStrokeColor="@color/DialogTint"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusTopStart="12dp"
+    app:boxCornerRadiusTopEnd="12dp"
+    app:boxCornerRadiusBottomStart="12dp"
+    app:boxCornerRadiusBottomEnd="12dp"
+    app:endIconMode="custom"
+    app:endIconDrawable="@drawable/paste"
+    app:endIconContentDescription="Paste URL"
+    app:endIconTint="@color/CancelButton"
+    android:padding="12dp"
+    app:hintTextColor="@color/DialogTint">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:textColor="@android:color/white"
+        app:hintTextColor="@android:color/darker_gray"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="File name (optional)"
+        android:textColor="@android:color/white"
+        app:hintTextColor="@android:color/darker_gray"
+        app:boxStrokeColor="@color/DialogTint"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            app:hintTextColor="@android:color/darker_gray"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/saveToRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/saveToLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Default Location"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnChooseFolder"
+            style="@style/Widget.MyDialog.Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Directory"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MyDialog.Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/Widget.MyDialog.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start" />
+    </LinearLayout>
+</com.google.android.material.textfield.TextInputLayout>

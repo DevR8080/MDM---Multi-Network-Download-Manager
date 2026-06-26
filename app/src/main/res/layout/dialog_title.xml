@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add download URL"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="8dp"/>

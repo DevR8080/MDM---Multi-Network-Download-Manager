@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="CircularGlowButton">
+        <attr name="cgb_icon" format="reference"/>
+        <attr name="cgb_iconSize" format="dimension"/>
+    </declare-styleable>
+</resources>

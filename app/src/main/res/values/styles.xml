@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavActiveIndicator">
+        <item name="android:width">0dp</item>
+        <item name="android:height">0dp</item>
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+    <style name="MyAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <!-- Rounded corners -->
+        <item name="shapeAppearance">@style/ShapeAppearance.MyDialog</item>
+        <item name="backgroundTint">@color/BottomNavColor</item>
+
+        <!-- Buttons -->
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MyDialog.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MyDialog.Button</item>
+    </style>
+
+    <style name="ShapeAppearance.MyDialog" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="Widget.MyDialog.Button" parent="Widget.Material3.Button">
+        <item name="android:insetLeft">8dp</item>
+        <item name="android:insetRight">8dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="backgroundTint">@color/StartButton</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.MyDialog.Button2" parent="Widget.Material3.Button">
+        <item name="android:insetLeft">8dp</item>
+        <item name="android:insetRight">8dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="backgroundTint">@color/CancelButton</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="MainColor">#191c21</color>
+    <color name="ctransparent">#00000000</color>
+    <color name="BGColor">#191c21</color>
+    <color name="BottomNavColor">#1b1e25</color>
+    <color name="MenuItems">#787d83</color>
+    <color name="ripple_light">#33FFFFFF</color>
+    <color name="selected">#3c6eb5</color>
+    <color name="ItemBG">#2b2e35</color>
+    <color name="Completed">#36cb4d</color>
+    <color name="CancelButton">#52bdf5</color>
+    <color name="StartButton">#36cb4d</color>
+    <color name="DialogTint">#AABCB9B9</color>
+    <color name="StatsItem">#AFAFAF</color>
+    <color name="SelectedMenu">#77C7F0</color>
+    <color name="gray">#303136</color>
+</resources>

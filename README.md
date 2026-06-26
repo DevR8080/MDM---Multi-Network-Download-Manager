@@ -58,9 +58,9 @@ If you find this project useful, consider supporting its development. Your donat
 
 USDT / USDC
 
-<img width="592" height="592" alt="qr-code" src="https://github.com/user-attachments/assets/f160a40f-8443-4973-8f7a-4c54abf09921" />
+<img width="250" height="250" alt="qr-code" src="https://github.com/user-attachments/assets/f160a40f-8443-4973-8f7a-4c54abf09921" />
 
-`0x971bf6aba6cd0b745b005f2866d4a42cacad390c`
+`0x971bf6aBa6Cd0b745b005F2866d4a42cAcAd390C`
 
 > Thank you for supporting the project! ❤️
 
